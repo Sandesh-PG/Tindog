@@ -1,0 +1,221 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* -----------HEADER's SECTION------------ */
+
+h1{
+    font-family: 'Lilita One';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+h3{
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* -------------MEDIA QUERIES-------------- */
+
+/* here we are centering the text in the title section, and making the image to turn 0 degree (meaning straight).*/
+
+@media (max-width: 1040px) {
+
+    #title{
+        text-align: center;
+    }
+
+    .phone-image-rotate {
+        display: none;
+    }
+
+    .contact-logo{
+        font-size: 26px;
+    }
+
+}
+
+
+/* here we are avoiding the phone image from colliding into the title section. */
+
+@media (max-width:1110px),(min-width:1023){
+    .phone-image-rotate{ 
+        left: 60%;
+    }
+}
+
+/* here we are making the button smaller at specified width. */
+/* 
+@media (max-width:1026px) {
+    .btn{
+        --bs-btn-padding-y: .25rem;
+         --bs-btn-padding-x: .5rem;
+          --bs-btn-font-size: 1rem;
+    }
+} */
+
+/* -------------TITLE SECTION------------- */
+
+#title{
+    background-color: #ff4c68;
+}
+
+/* ---------NAVBAR--------- */
+
+.navbar{
+    padding-bottom:65px;
+}
+
+.navbar-brand{
+    margin-left: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.nav-item{
+    padding:0px 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-light";
+}
+
+/* -----------BUTTONS---------- */
+
+.apple-img{
+    position: relative;
+    bottom: 2px;
+}
+
+.button-space{
+    margin: 5px;
+}
+
+/* -----------PHONE-IMAGE-------------- */
+
+.phone-image-rotate{
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------FEATURES SECTION----------------- */
+
+#features{
+    padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-text{
+    color: #8f8f8f;
+    text-align: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    color: #fd6959;
+    font-size: 50px;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* ---------TESTIMONIAL SECTION------------ */
+
+#testimonials{
+    text-align: center;
+    background-color:#fd6959;
+    color: white;
+}
+
+.testimonial-image{
+    width:10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* ---------PRESS SECTION-------- */
+
+#press{
+    background-color: #fd6959;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-image{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* ---------PRICING SECTION----------- */
+
+#pricing{
+    padding: 90px;
+}
+
+.pricing-column{
+    padding: 2% 3%;
+}
+
+/* -------------CALL TO ACT SECTION------------- */
+
+#cta{
+    text-align: center;
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 5% 2%;
+}
+
+.cta-text{
+    font-size: 2.4rem;
+    width: 55%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+
+/* --------FOOTER SECTION--------- */
+
+#footer{
+    text-align: center;
+    padding: 100px;
+}
+
+.contact-logo{
+    padding: 7px;
+    cursor: pointer;
+}
+
+.contact-logo:hover{
+    color: #ff4c68;
+}
+
+.copy-right-text{
+    color: #8f8f8f;
+    padding-top: 15px;
+}
